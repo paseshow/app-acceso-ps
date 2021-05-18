@@ -32,3 +32,17 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 -- Libreria para la utilización de rutas:
     npm i react-router-dom --save
 
+---------------------------------------------------------------------
+### COMANDOS GIT
+
+VERIFICAR ARCHIVOS MODIFICADOS:
+1) git status (te indica archivos modificados).
+
+AGREGAR LOS ARCHIVOS:
+2) git add .
+
+HACER COMMITS
+3) git commit -m " mensaje de descripcion"
+
+HACER PUSH
+4) git push
