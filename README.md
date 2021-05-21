@@ -41,8 +41,19 @@ VERIFICAR ARCHIVOS MODIFICADOS:
 AGREGAR LOS ARCHIVOS:
 2) git add .
 
-HACER COMMITS
+HACER COMMITS:
+
 3) git commit -m " mensaje de descripcion"
 
+<<<<<<< HEAD
 HACER PUSH
 4) git push
+=======
+HACER PUSH:
+
+4) git push
+
+TRAER ULTIMOS CAMBIOS DE LA RAMA DONDE ESTA PARADA:
+
+5) git pull
+>>>>>>> 1aafc42e13fe8606288d554f475d6cac5c83e567
