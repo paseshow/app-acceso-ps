@@ -2,14 +2,17 @@
 import React from 'react';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import  { Redirect } from 'react-router-dom'
+import  { withRouter } from 'react-router-dom'
 
-function Auth() {
-
-    // funcionalidad 
+function Auth(props) {
+    const { history } = props;
+    
     const ProtectedComponent = () => {
-        return <Redirect to='authentication' />
-    }
+        // aca realizamos la peticion indicada al final para registrar
+        // si esta ok, redirigimos
+        // REDIRIGIMOS A eventos
+        history.push('eventos');
+    };
 
     return (
         <div>
@@ -38,7 +41,8 @@ function Auth() {
     );
 }
 
-export default Auth;
+export default withRouter(Auth);
+// tiene acceso a props.history para que pueda redirigir con props.history.push
 
 /*
 
